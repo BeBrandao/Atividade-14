@@ -8,17 +8,57 @@
 
     <section>
         <h2>Número 1</h2>
-        <input type="text"id="v1"><br>
-        <input type="text"id="v2">
+        <p>Insira os valores para calcular a soma entre os dois</p>
+        <input type="text" id="v1"><br>
+        <input type="text" id="v2">
         <p id="res">Resposta: </p>
         <button type="button" onclick="Soma()">Soma</button>
-        <script src="script.js"></script>
     </section>
     
     <section>
         <h2>Número 2</h2>
         <p>Clique na lâmpada para acender/apagar a luz</p>
-        <p><img id="lampada" onclick="trocaLampada()"src="lampada_acesa.jpg" width=140 height=180></p>
+        <p><img id="lampada" onclick="trocaLampada()" src="lampada_acesa.jpg" width=140 height=180></p>
     </section>
+
+    <section>
+        <h2>Número 3</h2>
+        <p>Passe o mouse por cima da lâmpada para acender a luz</p>
+        <p><img id="lampada_2" onmouseover="acenderLampada()" onmouseout="apagarLampada()" src="lampada_apagada.jpg" width=140 height=180></p>
+    </section>
+
+    <section>
+        <h2>Número 4</h2>
+        <p>Clique nos butões para alterar a cor de fundo da página</p>
+        <button id="Verde" onclick="mudarCor(id)">Verde</button> <button id="Vermelho" onclick="mudarCor(id)">Vermelho</button> <button id="Reiniciar" onclick="mudarCor(id)">Reiniciar</button>
+    </section>
+
+    <section>
+        <h2>Número 5</h2>
+        <p>Insira os valores para calcular o resto da divisão entre os dois</p>
+        <input type="text" id="v3"><br>
+        <input type="text" id="v4">
+        <p id="resto">Resposta: </p>
+        <button type="button" onclick="restoDiv()">Calcular resto</button>
+    </section>
+
+    <section>
+        <h2>Número 6</h2>
+        <p>Insira o valor para calcular 5% de desconto em cima do valor</p>
+        <input type="text" id="v5"><br>
+        <p id="descontado">Valor Descontado: </p>
+        <p id="valorF">Valor com Desconto: </p>
+        <button type="button" onclick="desconto()">Calcular resto</button>
+    </section>
+
+    <section>
+        <h2>Número 7</h2>
+        <p>Análise de Idade</p>
+        <input type="text" id="idade"><br>
+        <p id="avaliacao">Avaliação: </p>
+        <button type="button" onclick="avaliarIdade()">Avaliar</button>
+    </section>
+    
+    <script src="script.js"></script>
 </body>
 </html>
