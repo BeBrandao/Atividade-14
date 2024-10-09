@@ -85,3 +85,41 @@ function avaliarIdade() {
         document.getElementById("avaliacao").textContent = "Avaliação: Você tem 65 anos"
     };
 }
+
+function tabuada() {
+    let tabuada = document.getElementById("tabuada");
+
+    for (x=0; x<=10; x++) {
+        for (y=0; y<=10; y++){
+            tabuada.innerHTML += `<br>${x} x ${y} = ${x*y};`
+        }
+    }
+    
+}
+
+function tabela() {
+    let tabela = document.getElementById("tabela");
+    for (x=0; x<=10; x++) {
+        let linha = document.createElement("tr")
+        for (y=0; y<=10; y++){
+            let celula = document.createElement("td")
+            celula.innerHTML = `${y} x ${x} = ${x*y};`
+            linha.appendChild(celula)
+        }
+        tabela.appendChild(linha)
+
+    }
+    
+}
+
+function load() {
+    let frases = document.getElementById("frases");
+
+    for (x=0; x<20; x++) {
+        frases.innerHTML += `<br>${x+1} - Da repetição advém o conhecimento;`
+    }
+    tabuada();
+    tabela()
+}
+
+window.onload = load;
